@@ -1,5 +1,8 @@
 import React from "react";
-import { Iconly } from "react-iconly";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Doughnut } from "react-chartjs-2";
+import { data } from "../../../utils/ChartData";
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function DoughnutChart() {
   return (
@@ -11,6 +14,7 @@ export default function DoughnutChart() {
           <img src="./assets/icon/chevron.svg" alt="drop down" />
         </p>
       </div>
+      <Doughnut data={data} />
     </div>
   );
 }

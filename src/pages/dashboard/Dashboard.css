@@ -50,6 +50,7 @@
 }
 .dashboard .card small.action {
   color: #519c66;
+  /* # */
 }
 .dashboard .order {
   grid-row: 2 / 8;
