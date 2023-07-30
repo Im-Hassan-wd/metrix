@@ -1,0 +1,25 @@
+.navbar {
+  background: #fff;
+}
+.navbar .main {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--smoke);
+}
+.navbar .profile-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.navbar .profile {
+  padding: 7px;
+  background: #fef5ea;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navbar .navigations {
+  padding: 0 10px;
+}
