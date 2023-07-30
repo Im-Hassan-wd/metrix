@@ -9,6 +9,7 @@
   --primary: #5570f1;
   --black-50: #53545c;
   --black-60: #45464e;
+  --smoke: #f9f9f9;
 }
 
 * {
@@ -21,4 +22,7 @@
 a {
   text-decoration: none;
   color: var(--black-50);
+}
+li {
+  list-style: none;
 }

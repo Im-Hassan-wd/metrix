@@ -1,0 +1,32 @@
+.sidebar {
+  padding: 32px;
+}
+.sidebar .logo {
+  margin-bottom: 32px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.sidebar .logo span {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 8px;
+  color: var(--black-60);
+}
+.sidebar li a {
+  display: flex;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.sidebar li a.active {
+  background: var(--primary);
+  color: #fff;
+}
+.sidebar li a:hover {
+  background: var(--smoke);
+  color: var(--black-50);
+}

@@ -9,17 +9,17 @@ export const listItems = [
   {
     name: "Orders",
     icon: <Iconly name="Bag" />,
-    to: "/",
+    to: "/o",
   },
   {
     name: "Customers",
     icon: <Iconly name="TwoUsers" />,
-    to: "/",
+    to: "/c",
   },
   {
     name: "Inventory",
     icon: <Iconly name="Folder" />,
-    to: "/",
+    to: "/i",
   },
   {
     name: "Conversations",
@@ -29,6 +29,6 @@ export const listItems = [
   {
     name: "Settings",
     icon: <Iconly name="Setting" />,
-    to: "/",
+    to: "/s",
   },
 ];
