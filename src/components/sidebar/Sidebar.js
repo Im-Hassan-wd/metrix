@@ -1,7 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Iconly } from "react-iconly";
+
+// css
 import "./Sidebar.css";
 
+// sidebar list items (data)
 import { listItems } from "./Data";
 
 export default function Sidebar() {
@@ -22,6 +26,13 @@ export default function Sidebar() {
           </li>
         ))}
       </ul>
+
+      {/* <ul>
+        <li>
+          <Iconly name="Category" />
+          <span>Contact support</span>
+        </li>
+      </ul> */}
     </div>
   );
 }

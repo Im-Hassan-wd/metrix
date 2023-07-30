@@ -19,6 +19,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background: var(--smoke);
+}
+
 a {
   text-decoration: none;
   color: var(--black-50);
