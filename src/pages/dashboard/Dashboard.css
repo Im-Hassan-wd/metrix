@@ -51,6 +51,30 @@
 .dashboard .card small.action {
   color: #519c66;
 }
+.dashboard .order {
+  grid-row: 2 / 8;
+  padding: 10px;
+}
+.dashboard .order li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid var(--smoke);
+  padding: 15px 0;
+}
+.dashboard .order li div:last-of-type {
+  margin-left: auto;
+}
+.dashboard .order .date {
+  color: var(--black-10);
+}
+.dashboard .order .status {
+  background: var(--smoke);
+  text-align: center;
+  padding: 2px 10px;
+  border-radius: 8px;
+  /* #F57E771F */
+}
 .dashboard .doughnut {
   grid-row: 2/4;
 }
