@@ -7,6 +7,8 @@
 
 :root {
   --primary: #5570f1;
+  --black-50: #53545c;
+  --black-60: #45464e;
 }
 
 * {
@@ -14,4 +16,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-50);
 }

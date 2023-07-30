@@ -5,11 +5,13 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Chat from "./pages/chats/Chat";
 
 // components
+import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Sidebar />
         <Switch>
           <Route exact path="/">
             <Dashboard />
