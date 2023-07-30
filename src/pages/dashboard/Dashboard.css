@@ -1,0 +1,43 @@
+.dashboard {
+  padding: 10px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.dashboard .card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+}
+.dashboard .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard .card-body {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.dashboard .card-body div {
+  margin-right: auto;
+}
+.dashboard .card h3 {
+  font-weight: 600;
+  color: var(--black-60);
+}
+.dashboard .card p,
+.dashboard .card small {
+  color: var(--black-10);
+}
+.dashboard .card svg {
+  padding: 5px;
+  background: #5570f11f;
+  border-radius: 4px;
+}
+.dashboard .card small.action {
+  color: #519c66;
+}

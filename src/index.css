@@ -1,14 +1,11 @@
 /* google font  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-/* falticon  */
-@import url("https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css");
-@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
 
 :root {
   --primary: #5570f1;
-  --black-50: #53545c;
   --black-60: #45464e;
+  --black-50: #53545c;
+  --black-10: #bec0ca;
   --smoke: #f9f9f9;
 }
 
