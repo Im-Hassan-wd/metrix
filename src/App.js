@@ -5,6 +5,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Chat from "./pages/chats/Chat";
 
 // components
+import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
@@ -12,14 +13,17 @@ function App() {
     <div className="App">
       <Router>
         <Sidebar />
-        <Switch>
-          <Route exact path="/">
-            <Dashboard />
-          </Route>
-          <Route path="/chats">
-            <Chat />
-          </Route>
-        </Switch>
+        <div>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Dashboard />
+            </Route>
+            <Route path="/chats">
+              <Chat />
+            </Route>
+          </Switch>
+        </div>
       </Router>
     </div>
   );
