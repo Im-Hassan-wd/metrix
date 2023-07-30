@@ -1,13 +1,13 @@
 import React from "react";
 import { Iconly } from "react-iconly";
 
-import { summary } from "../summaryData";
+import { summary } from "../../../utils/summaryData";
 
 export default function Card() {
   return (
-    <div className="cards">
-      {summary.map((summ) => (
-        <div className="card">
+    <>
+      {summary.map((summ, i) => (
+        <div className={`card card-${i + 1}`} key={summ.id}>
           <div className="card-head">
             {summ.icon}
             <p>
@@ -17,8 +17,8 @@ export default function Card() {
           </div>
           <div className="card-body">
             {summ.overview.map((item) => (
-              <div>
-                <small>{item.label}</small>
+              <div key={item.label}>
+                <p>{item.label}</p>
                 <h3>{item.value} </h3>
                 {item?.percentage && (
                   <small className="action">+{item?.percentage}%</small>
@@ -28,6 +28,6 @@ export default function Card() {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }

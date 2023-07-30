@@ -5,13 +5,15 @@ import "./Dashboard.css";
 
 // dashboard component
 import Card from "./components/Card";
+import DoughnutChart from "./components/DoughnutChart";
+import Order from "./components/Order";
 
 export default function Dashboard() {
   return (
     <div className="dashboard">
-      <div className="dashboard-summary">
-        <Card />
-      </div>
+      <Card />
+      <DoughnutChart />
+      <Order />
     </div>
   );
 }

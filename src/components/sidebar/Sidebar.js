@@ -6,7 +6,7 @@ import { Iconly } from "react-iconly";
 import "./Sidebar.css";
 
 // sidebar list items (data)
-import { listItems } from "./Data";
+import { listItems } from "../../utils/SidebarData";
 
 export default function Sidebar() {
   return (
