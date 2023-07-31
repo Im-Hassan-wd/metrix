@@ -36,12 +36,12 @@ export const listItems = [
 export const sidebarInfo = [
   {
     name: "Contact support",
-    icon: <Iconly name="Game" />,
+    icon: "./assets/icon/headphone.svg",
     to: "/contact",
   },
   {
     name: "Free Gifts Await You",
-    icon: <Iconly name="Bag2" />,
+    icon: "./assets/icon/gift.svg",
     to: "/free",
   },
   {

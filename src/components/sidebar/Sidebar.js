@@ -31,8 +31,19 @@ export default function Sidebar() {
         {sidebarInfo.map((item) => (
           <li key={item.name}>
             <NavLink exact to={item.to}>
-              <span>{item.icon}</span>
-              <span>{item.name}</span>
+              {item.name.includes("Free") || item.name.includes("Contact") ? (
+                <img src={item.icon} alt={item.name} />
+              ) : (
+                <span>{item.icon}</span>
+              )}
+              <span>
+                {item.name}
+                {item.name.includes("Free") && (
+                  <div>
+                    <span>Upgrade your account</span>
+                  </div>
+                )}
+              </span>
             </NavLink>
           </li>
         ))}

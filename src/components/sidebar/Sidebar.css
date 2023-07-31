@@ -37,3 +37,32 @@
 .sidebar .info {
   margin-top: auto;
 }
+.sidebar .info li a {
+  padding: 8px 16px;
+}
+.sidebar .info span {
+  display: inline-block;
+  padding: 5px 0;
+}
+.sidebar .info li:nth-child(1) a {
+  background: #5e63661a;
+  border: 1px solid #5e63661a;
+}
+.sidebar .info li:nth-child(1) a:hover {
+  background: none;
+}
+.sidebar .info li:nth-child(2) a {
+  align-items: flex-start;
+  background: #ffcc9133;
+  border: 1px solid #ffcc9133;
+}
+.sidebar .info li:nth-child(2) a:hover {
+  background: none;
+}
+.sidebar .info li:nth-child(3) a {
+  color: #cc5f5f;
+}
+.sidebar .info li:nth-child(3) a:hover {
+  background: #cc5f5f;
+  color: #fff;
+}
