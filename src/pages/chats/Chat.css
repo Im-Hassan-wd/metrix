@@ -131,6 +131,7 @@
   border-radius: 16px 16px 16px 0;
   color: #fff;
   width: max-content;
+  max-width: 350px;
 }
 /* search bar  */
 .seachbar-input-div {
