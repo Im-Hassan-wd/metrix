@@ -118,16 +118,21 @@
 .message-content small {
   margin-top: 5px;
 }
+.message-content i {
+  background: var(--secondary);
+  border-radius: 50%;
+  padding: 2px 3px;
+}
 .message-content.owner {
   align-items: flex-end;
 }
 .message-content.owner p {
-  background: #ffead1;
-  color: #1c1d22;
+  background: var(--secondary);
+  color: var(--black-100);
   border-radius: 16px 16px 0 16px;
 }
 .message-content.owner span {
-  background: #ffead1;
+  background: var(--secondary);
   width: 15px;
   height: 15px;
   border-radius: 50%;

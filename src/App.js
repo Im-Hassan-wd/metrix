@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import { useEffect, useState } from "react";
 
 // pages
@@ -55,6 +60,9 @@ function App() {
             </Route>
             <Route path="/chats">
               <Chat />
+            </Route>
+            <Route path="/*">
+              <Redirect to="/" />
             </Route>
           </Switch>
         </div>
