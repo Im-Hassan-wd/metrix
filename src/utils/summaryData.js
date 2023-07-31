@@ -31,7 +31,7 @@ export const summary = [
   },
   {
     id: 4,
-    icon: <Iconly name="Bag2" primaryColor="blue" size={30} />,
+    icon: <Iconly name="Folder" primaryColor="blue" size={30} />,
     date: "This week",
     overview: [
       { label: "All orders", value: "450" },
@@ -41,7 +41,7 @@ export const summary = [
   },
   {
     id: 5,
-    icon: <Iconly name="Bag2" primaryColor="blue" size={30} />,
+    icon: <Iconly name="Buy" primaryColor="blue" size={30} />,
     date: "This week",
     overview: [
       { label: "All orders", value: "450" },
