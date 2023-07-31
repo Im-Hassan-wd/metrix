@@ -16,6 +16,7 @@ export default function Dashboard() {
       <DoughnutChart />
       <Order />
       {/* <Barchart /> */}
+      <div className="summary"></div>
     </div>
   );
 }

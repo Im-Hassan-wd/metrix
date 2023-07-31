@@ -2,7 +2,6 @@
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  /* grid-template-rows: repeat(6, minmax(0, 1fr)); */
   gap: 10px;
 }
 .dashboard > * {
@@ -36,7 +35,6 @@
   color: var(--black-60);
   display: inline-block;
   margin-right: 5px;
-  /* font-size: 20px; */
 }
 .dashboard .card p,
 .dashboard .card small {
@@ -50,7 +48,6 @@
 }
 .dashboard .card small.action {
   color: #519c66;
-  /* # */
 }
 .dashboard .order {
   grid-row: 2 / 8;
@@ -74,7 +71,6 @@
   text-align: center;
   padding: 2px 10px;
   border-radius: 8px;
-  /* #F57E771F */
 }
 .dashboard .doughnut {
   grid-row: 2/4;
@@ -82,4 +78,41 @@
 .dashboard .card-5 {
   grid-row: 3 / 4;
   grid-column: 5 / 9;
+}
+.dashboard .summary {
+  grid-row: 4 /8;
+  grid-column: 1 / 9;
+}
+@media (max-width: 950px) {
+  .dashboard .card-1,
+  .dashboard .card-3,
+  .dashboard .card-5 {
+    grid-column: 1 / 7;
+  }
+  .dashboard .card-2,
+  .dashboard .card-4,
+  .dashboard .doughnut {
+    grid-column: 7 / 13;
+  }
+  .dashboard .card-3,
+  .dashboard .card-4 {
+    grid-row: 2 /3;
+  }
+  .dashboard .doughnut {
+    grid-row: 3 /4;
+  }
+  .dashboard .summary {
+    grid-column: 1 / 7;
+    grid-row: 6 / 8;
+  }
+  .dashboard .order {
+    grid-column: 7 / 13;
+    grid-row: 6 / 8;
+  }
+}
+@media (max-width: 800px) {
+  .dashboard > * {
+    grid-column: 1/13 !important;
+    grid-row: initial !important;
+  }
 }

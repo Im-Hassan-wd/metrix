@@ -5,11 +5,16 @@ import { Iconly } from "react-iconly";
 // styles
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ setMobileMenu, screenWidth }) {
   //   console.log(useParams);
   return (
     <nav className="navbar">
       <div className="main">
+        {screenWidth <= 512 && (
+          <button className="hamburger" onClick={() => setMobileMenu(true)}>
+            <Iconly name="Filter" set="two-tone" />
+          </button>
+        )}
         <div>Dashboard</div>
 
         <div className="profile-list">
@@ -22,7 +27,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navigations">
-        <Iconly name="Home" set="bulk" primaryColor="Blue" size={15} />
+        <Iconly name="Home" set="bulk" primaryColor="blue" size={15} />
       </div>
     </nav>
   );
