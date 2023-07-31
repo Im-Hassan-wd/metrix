@@ -102,6 +102,9 @@
   color: var(--primary);
   padding: 0px 10px;
 }
+.message {
+  height: calc(100% -160px);
+}
 .message-content {
   margin: 20px 0;
   display: flex;
@@ -141,6 +144,7 @@
   /* align-items: center;
   justify-content: center; */
 }
+
 /* search bar  */
 .seachbar-input-div {
   display: flex;
@@ -166,6 +170,46 @@
   color: var(--black);
   font-size: 1.2rem;
 }
+
+/* message input  */
+.input-div {
+  border: 1px solid #e1e2e9;
+  padding: 7px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.input-div input {
+  border: none;
+  outline: none;
+}
+.input-div i {
+  display: inline-block;
+  font-size: 18px;
+}
+.input-div i.fi-rr-plus {
+  background: var(--secondary);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.input-div i.fi-rr-grin-alt {
+  margin-right: 10px;
+  margin-left: auto;
+  color: var(--primary);
+}
+.input-div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  background: var(--secondary);
+  padding: 7px;
+  border-radius: 8px;
+}
+
+/* responsiveness  */
 @media (max-width: 965px) {
   .conversations .main {
     flex-direction: column;
