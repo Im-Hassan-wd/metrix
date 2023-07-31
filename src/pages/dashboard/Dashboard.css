@@ -6,6 +6,7 @@
 }
 .dashboard > * {
   grid-column: span 4 / span 4;
+  transition: all 0.3s ease;
 }
 .dashboard .card,
 .dashboard .order {
@@ -14,6 +15,12 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+}
+.dashboard .card {
+  transform: scale(0.99);
+}
+.dashboard .card:hover {
+  transform: scale(1);
 }
 .dashboard .card-head {
   display: flex;
@@ -57,6 +64,10 @@
 .dashboard .order {
   grid-row: 2 / 8;
   padding: 10px;
+  transform: scale(0.99);
+}
+.dashboard .order:hover {
+  transform: scale(1);
 }
 .dashboard .order li {
   display: flex;
@@ -81,6 +92,15 @@
 }
 .dashboard .doughnut {
   grid-row: 2/4;
+}
+.dashboard .card-4 {
+  background: var(--primary);
+  color: #fff;
+}
+.dashboard .card-4 small,
+.dashboard .card-4 h3,
+.dashboard .card-4 p {
+  color: #fff !important;
 }
 .dashboard .card-5 {
   grid-row: 3 / 4;

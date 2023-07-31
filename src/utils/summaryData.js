@@ -31,7 +31,7 @@ export const summary = [
   },
   {
     id: 4,
-    icon: <Iconly name="Folder" primaryColor="blue" size={30} />,
+    icon: <Iconly name="Folder" primaryColor="white" size={30} />,
     date: "This week",
     overview: [
       { label: "All product", value: "45" },
