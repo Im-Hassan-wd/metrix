@@ -6,7 +6,7 @@ import { Iconly } from "react-iconly";
 import "./Sidebar.css";
 
 // sidebar list items (data)
-import { listItems } from "../../utils/SidebarData";
+import { listItems, sidebarInfo } from "../../utils/SidebarData";
 
 export default function Sidebar() {
   return (
@@ -27,12 +27,16 @@ export default function Sidebar() {
         ))}
       </ul>
 
-      {/* <ul>
-        <li>
-          <Iconly name="Category" />
-          <span>Contact support</span>
-        </li>
-      </ul> */}
+      <ul className="info">
+        {sidebarInfo.map((item) => (
+          <li key={item.name}>
+            <NavLink exact to={item.to}>
+              <span>{item.icon}</span>
+              <span>{item.name}</span>
+            </NavLink>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

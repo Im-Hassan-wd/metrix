@@ -1,6 +1,9 @@
 .sidebar {
-  padding: 32px;
+  padding: 24px;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
 }
 .sidebar .logo {
   margin-bottom: 32px;
@@ -30,4 +33,7 @@
 .sidebar li a:hover {
   background: var(--smoke);
   color: var(--black-50);
+}
+.sidebar .info {
+  margin-top: auto;
 }

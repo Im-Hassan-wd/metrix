@@ -7,6 +7,7 @@ export const data = {
       backgroundColor: ["#5570F1", "#FFCC91", "#97A5EB"],
       borderColor: ["#5570F1", "#FFCC91", "#97A5EB"],
       borderWidth: 1,
+      lineWidth: 10,
     },
   ],
 };

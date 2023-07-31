@@ -32,3 +32,21 @@ export const listItems = [
     to: "/s",
   },
 ];
+
+export const sidebarInfo = [
+  {
+    name: "Contact support",
+    icon: <Iconly name="Game" />,
+    to: "/contact",
+  },
+  {
+    name: "Free Gifts Await You",
+    icon: <Iconly name="Bag2" />,
+    to: "/free",
+  },
+  {
+    name: "Logout",
+    icon: <Iconly name="Logout" set="two-tone" />,
+    to: "/s",
+  },
+];
