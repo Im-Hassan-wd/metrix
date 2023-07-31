@@ -17,9 +17,9 @@ export default function Order() {
               <p
                 className="status"
                 style={{
-                  color: order.status == "Pending" ? "#CC5F5F" : "#519C66",
+                  color: order.status === "Pending" ? "#CC5F5F" : "#519C66",
                   background:
-                    order.status == "Pending" ? "#F57E771F" : "#32936F1F",
+                    order.status === "Pending" ? "#F57E771F" : "#32936F1F",
                 }}
               >
                 {order.status}

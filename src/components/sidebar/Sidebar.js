@@ -32,7 +32,7 @@ export default function Sidebar({ screenWidth, mobileMenu, setMobileMenu }) {
 
           <ul className="info">
             {sidebarInfo.map((item) => (
-              <li key={item.name}>
+              <li onClick={() => setMobileMenu(false)} key={item.name}>
                 <NavLink exact to={item.to}>
                   {item.name.includes("Free") ||
                   item.name.includes("Contact") ? (
