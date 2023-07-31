@@ -110,6 +110,7 @@
   grid-row: 4 /8;
   grid-column: 1 / 9;
 }
+/* responsiveness  */
 @media (max-width: 950px) {
   .dashboard .card-1,
   .dashboard .card-3,

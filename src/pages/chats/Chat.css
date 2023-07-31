@@ -213,6 +213,7 @@
 .input-div i {
   display: inline-block;
   font-size: 18px;
+  cursor: pointer;
 }
 .input-div i.fi-rr-plus {
   background: var(--secondary);
