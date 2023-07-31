@@ -34,9 +34,8 @@ export const summary = [
     icon: <Iconly name="Folder" primaryColor="blue" size={30} />,
     date: "This week",
     overview: [
-      { label: "All orders", value: "450" },
-      { label: "Pending", value: "5" },
-      { label: "Completed", value: "445" },
+      { label: "All product", value: "45" },
+      { label: "Active", value: "32", percentage: "24" },
     ],
   },
   {
@@ -44,9 +43,8 @@ export const summary = [
     icon: <Iconly name="Buy" primaryColor="blue" size={30} />,
     date: "This week",
     overview: [
-      { label: "All orders", value: "450" },
-      { label: "Pending", value: "5" },
-      { label: "Completed", value: "445" },
+      { label: "Abandoned Cart", value: "20%", percentage: "0.00" },
+      { label: "Customers", value: "30" },
     ],
   },
 ];
