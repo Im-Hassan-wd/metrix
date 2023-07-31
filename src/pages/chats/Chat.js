@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import "./Chat.css";
 
 // components
-import SearchBar from "./SearchBar";
+import Input from "./Input";
 import Message from "./Message";
+import SearchBar from "./SearchBar";
 
 // utils
 import { chats } from "../../utils/ChatData";
@@ -64,6 +65,7 @@ export default function Chat() {
           <div className="message">
             <Message />
           </div>
+          <Input />
         </div>
       </div>
     </div>
