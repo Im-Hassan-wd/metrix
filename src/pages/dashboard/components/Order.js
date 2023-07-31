@@ -14,7 +14,16 @@ export default function Order() {
             </div>
             <div>
               <p className="date">{order.date}</p>
-              <p className="status">{order.status}</p>
+              <p
+                className="status"
+                style={{
+                  color: order.status == "Pending" ? "#CC5F5F" : "#519C66",
+                  background:
+                    order.status == "Pending" ? "#F57E771F" : "#32936F1F",
+                }}
+              >
+                {order.status}
+              </p>
             </div>
           </li>
         ))}
