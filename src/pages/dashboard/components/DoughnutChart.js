@@ -11,7 +11,7 @@ export default function DoughnutChart() {
         <div>Marketing</div>
         <p>
           <small>This week</small>
-          <img src="./assets/icon/chevron.svg" alt="drop down" />
+          <i class="fi fi-rr-angle-small-down"></i>
         </p>
       </div>
       <Doughnut data={data} />

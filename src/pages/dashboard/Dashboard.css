@@ -20,6 +20,11 @@
   align-items: center;
   justify-content: space-between;
 }
+.dashboard .card-head i {
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: -10px;
+}
 .dashboard .card-body {
   padding-top: 24px;
   display: flex;
