@@ -5,6 +5,7 @@
   --primary: #5570f1;
   --black-60: #45464e;
   --black-50: #53545c;
+  --black-30: #8b8d97;
   --black-10: #bec0ca;
   --smoke: #f9f9f9;
 }
@@ -30,7 +31,7 @@ li {
 }
 .btn {
   display: flex;
-  padding: 16px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   gap: 10px;

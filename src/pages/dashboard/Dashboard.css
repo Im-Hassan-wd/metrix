@@ -65,6 +65,7 @@
 }
 .dashboard .order .date {
   color: var(--black-10);
+  font-size: 13px;
 }
 .dashboard .order .status {
   background: var(--smoke);

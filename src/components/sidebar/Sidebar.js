@@ -11,7 +11,7 @@ import { listItems, sidebarInfo } from "../../utils/SidebarData";
 export default function Sidebar({ screenWidth, mobileMenu, setMobileMenu }) {
   return (
     <>
-      {(mobileMenu || screenWidth > 512) && (
+      {screenWidth <= 512 && (
         <div className="sidebar">
           <div className="logo">
             <img src="./assets/icon/logo.svg" alt="logo" />
@@ -33,8 +33,20 @@ export default function Sidebar({ screenWidth, mobileMenu, setMobileMenu }) {
             {sidebarInfo.map((item) => (
               <li key={item.name}>
                 <NavLink exact to={item.to}>
-                  <span>{item.icon}</span>
-                  <span>{item.name}</span>
+                  {item.name.includes("Free") ||
+                  item.name.includes("Contact") ? (
+                    <img src={item.icon} alt={item.name} />
+                  ) : (
+                    <span>{item.icon}</span>
+                  )}
+                  <span>
+                    {item.name}
+                    {item.name.includes("Free") && (
+                      <div>
+                        <span>Upgrade your account</span>
+                      </div>
+                    )}
+                  </span>
                 </NavLink>
               </li>
             ))}
