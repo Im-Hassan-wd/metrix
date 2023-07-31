@@ -1,0 +1,119 @@
+.conversations {
+  padding: 20px;
+}
+.conversations .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.conversations .main {
+  display: flex;
+  gap: 20px;
+}
+.conversations .chats,
+.conversations .messages {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+}
+.chats {
+  width: 350px;
+}
+.chats-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chats li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border-bottom: 1px solid var(--smoke);
+  padding: 15px 0;
+}
+.chats li .name {
+  font-weight: bold;
+}
+.chats li .date {
+  font-size: 13px;
+}
+.chats .content {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.messages {
+  flex: 1;
+}
+.messages {
+  /* background: #fff;
+  padding: 10px;
+  height: calc(100% - 857px);
+  margin: 16px 0;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 0;
+  overflow-y: scroll; */
+}
+.user-details {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--smoke);
+  padding-bottom: 10px;
+}
+.message-content {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.message-content.owner {
+  align-items: flex-end;
+}
+.message-content.owner p {
+  background: #ffead1;
+  color: #1c1d22;
+  border-radius: 16px 16px 0 16px;
+}
+.message-content.owner span {
+  background: #ffead1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  /* align-items: center;
+  justify-content: center; */
+}
+.message-content p {
+  padding: 16px 20px;
+  background: var(--primary);
+  border-radius: 16px 16px 16px 0;
+  color: #fff;
+  width: max-content;
+}
+/* search bar  */
+.seachbar-input-div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--smoke);
+}
+.seachbar-input-div input {
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+.seachbar-input-div i {
+  color: var(--black);
+  font-size: 1.2rem;
+}
