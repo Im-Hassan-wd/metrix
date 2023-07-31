@@ -11,7 +11,7 @@ import { listItems, sidebarInfo } from "../../utils/SidebarData";
 export default function Sidebar({ screenWidth, mobileMenu, setMobileMenu }) {
   return (
     <>
-      {screenWidth <= 512 && (
+      {(mobileMenu || screenWidth > 500) && (
         <div className="sidebar">
           <div className="logo">
             <img src="./assets/icon/logo.svg" alt="logo" />
