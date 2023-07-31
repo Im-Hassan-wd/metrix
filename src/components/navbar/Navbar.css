@@ -30,3 +30,12 @@
   border: none;
   cursor: pointer;
 }
+@media (max-width: 612px) {
+  .navbar .main {
+    justify-content: flex-start;
+  }
+  .navbar .route {
+    flex: 1;
+    margin-left: 10px;
+  }
+}

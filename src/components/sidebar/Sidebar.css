@@ -81,13 +81,13 @@
     display: none;
   }
 }
-@media (max-width: 512px) {
+@media (max-width: 612px) {
   .sidebar {
     position: fixed;
     z-index: 12;
     top: 0;
     left: 0;
-    width: fit-content;
+    width: initial;
     height: 100vh;
     box-shadow: 5px 5px 15px #64666c;
     padding: 24px;

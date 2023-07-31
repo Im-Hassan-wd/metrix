@@ -10,12 +10,12 @@ export default function Navbar({ setMobileMenu, screenWidth }) {
   return (
     <nav className="navbar">
       <div className="main">
-        {screenWidth <= 512 && (
+        {screenWidth <= 612 && (
           <button className="hamburger" onClick={() => setMobileMenu(true)}>
             <Iconly name="Filter" set="two-tone" />
           </button>
         )}
-        <div>Dashboard</div>
+        <div className="route">Dashboard</div>
 
         <div className="profile-list">
           <div className="profile">
