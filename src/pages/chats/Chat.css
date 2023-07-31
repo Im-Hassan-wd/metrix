@@ -166,8 +166,12 @@
     width: 100%;
   }
 }
-@media (max-width: 512px) {
-  .user-details {
+@media (max-width: 612px) {
+  .conversations {
+    padding: 20px 0;
+  }
+  .user-details,
+  .conversations .head {
     flex-direction: column;
   }
   .user-details .summary {
