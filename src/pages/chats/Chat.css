@@ -25,6 +25,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.chats-head h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
 .chats li {
   display: flex;
   align-items: flex-start;
@@ -52,6 +56,48 @@
   align-items: center;
   border-bottom: 1px solid var(--smoke);
   padding-bottom: 10px;
+  gap: 20px;
+}
+.user-details .name {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.user-details .status {
+  color: var(--black-10);
+}
+.user-details .status .dot {
+  background: var(--primary);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.user-details .date {
+  color: var(--black-30);
+  font-size: 13px;
+  margin: 0 5px;
+}
+.user-details div:last-of-type {
+  margin-left: auto;
+}
+.user-details div:last-of-type > span {
+  display: inline-block;
+  margin-left: 10px;
+}
+.user-details .summary {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0;
+}
+.user-details .summary small {
+  display: inline-block;
+  margin-bottom: -5px;
+}
+.user-details a {
+  color: var(--primary);
+  padding: 0px 10px;
 }
 .message-content {
   margin: 20px 0;
