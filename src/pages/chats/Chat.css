@@ -1,3 +1,12 @@
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
 .conversations {
   padding: 20px;
 }
@@ -19,6 +28,19 @@
 }
 .chats {
   width: 350px;
+  height: 566px;
+  overflow-y: scroll;
+}
+.chats::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.chats::-webkit-scrollbar-track {
+  background: var(--smoke);
+}
+/* Handle */
+.chats::-webkit-scrollbar-thumb {
+  background: var(--black-10);
 }
 .chats-head {
   display: flex;
@@ -102,8 +124,12 @@
   color: var(--primary);
   padding: 0px 10px;
 }
-.message {
-  height: calc(100% -160px);
+.message-container {
+  height: calc(100% - 128px);
+  overflow-y: scroll;
+}
+.message-container::-webkit-scrollbar {
+  width: 3px;
 }
 .message-content {
   margin: 20px 0;
@@ -141,8 +167,6 @@
   border-radius: 50%;
   display: inline-block;
   text-align: center;
-  /* align-items: center;
-  justify-content: center; */
 }
 
 /* search bar  */
@@ -183,6 +207,8 @@
 .input-div input {
   border: none;
   outline: none;
+  width: 100%;
+  padding: 8px 0;
 }
 .input-div i {
   display: inline-block;

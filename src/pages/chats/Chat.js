@@ -62,7 +62,7 @@ export default function Chat() {
               </div>
             </div>
           </div>
-          <div className="message">
+          <div className="message-container">
             <Message />
           </div>
           <Input />
