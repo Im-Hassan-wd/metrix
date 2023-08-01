@@ -25,7 +25,7 @@ export const listItems = [
   {
     name: "Conversations",
     icon: <Iconly name="Chat" />,
-    to: "/chats",
+    to: "/conversations",
     count: 18,
   },
   {

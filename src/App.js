@@ -58,7 +58,7 @@ function App() {
             <Route exact path="/">
               <Dashboard />
             </Route>
-            <Route path="/chats">
+            <Route path="/conversations">
               <Chat />
             </Route>
             <Route path="/*">

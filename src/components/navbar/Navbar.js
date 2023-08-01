@@ -4,6 +4,7 @@ import { Iconly } from "react-iconly";
 
 // styles
 import "./Navbar.css";
+import Breadcrumb from "../breadcrumb/Breadcrumb";
 
 export default function Navbar({ setMobileMenu, screenWidth }) {
   //   console.log(useParams);
@@ -27,7 +28,7 @@ export default function Navbar({ setMobileMenu, screenWidth }) {
         </div>
       </div>
       <div className="navigations">
-        <Iconly name="Home" set="bulk" primaryColor="blue" size={15} />
+        <Breadcrumb />
       </div>
     </nav>
   );
