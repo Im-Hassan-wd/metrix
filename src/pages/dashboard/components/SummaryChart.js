@@ -72,7 +72,7 @@ export default class Example extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" stackId="a" fill="#8884d8" />
+          <Bar dataKey="pv" stackId="a" fill="#5570F1" />
           <Bar dataKey="uv" stackId="a" fill="#EEF0FA" />
         </BarChart>
       </ResponsiveContainer>
