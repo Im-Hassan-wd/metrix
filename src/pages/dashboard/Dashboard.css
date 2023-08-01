@@ -85,6 +85,20 @@
   grid-row: 4 /8;
   grid-column: 1 / 9;
 }
+.progressbar {
+  height: 315px;
+  width: 15px;
+  border-radius: 20px;
+  background: #eef0fa;
+  display: flex;
+  align-items: flex-end;
+}
+.bar {
+  height: 250px;
+  width: 100%;
+  border-radius: 20px;
+  background: #5570f1;
+}
 @media (max-width: 950px) {
   .dashboard .card-1,
   .dashboard .card-3,
