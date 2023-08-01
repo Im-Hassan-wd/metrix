@@ -36,3 +36,30 @@ Once the installation is complete, you can start the development server with the
 ```bash
 npm run start
 ```
+## Project Stucture
+The project follows a standard React/Next.js folder structure. The main components and pages can be found in the src/components and src/pages directories, respectively. Styles are located after every pgaes and components directory, and any additional assets are placed in the public folder.
+
+metrix/
+├── src/
+│   ├── components/
+│   │   ├── Component1.js
+│   │   ├── Component2.js
+│   │   └── ...
+│   ├── pages/
+│   │   ├── index.js
+│   │   ├── about.js
+│   │   └── ...
+│   ├── styles/
+│   │   ├── main.css
+│   │   └── ...
+│   └── ...
+├── public/
+│   ├── images/
+│   │   ├── image1.jpg
+│   │   ├── image2.png
+│   │   └── ...
+│   └── ...
+├── package.json
+├── .gitignore
+├── README.md
+└── ...
