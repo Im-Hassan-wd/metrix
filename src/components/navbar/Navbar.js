@@ -1,12 +1,15 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Iconly } from "react-iconly";
 
 // styles
 import "./Navbar.css";
+import Breadcrumb from "../breadcrumb/Breadcrumb";
 
 export default function Navbar({ setMobileMenu, screenWidth }) {
-  //   console.log(useParams);
+  const location = useLocation();
+  const path = location.pathname.substring(1);
+
   return (
     <nav className="navbar">
       <div className="main">
@@ -15,7 +18,7 @@ export default function Navbar({ setMobileMenu, screenWidth }) {
             <Iconly name="Filter" set="two-tone" />
           </button>
         )}
-        <div className="route">Dashboard</div>
+        <div className="route">{path ? path : "dashboard"}</div>
 
         <div className="profile-list">
           <div className="profile">
@@ -27,7 +30,7 @@ export default function Navbar({ setMobileMenu, screenWidth }) {
         </div>
       </div>
       <div className="navigations">
-        <Iconly name="Home" set="bulk" primaryColor="blue" size={15} />
+        <Breadcrumb />
       </div>
     </nav>
   );

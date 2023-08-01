@@ -12,13 +12,13 @@ export default function Message() {
           <p className="">Hello Janet, thank you for reaching out</p>
         </div>
         <small>
-          12:55 am <i class="fi fi-rr-check"></i>
+          12:55 am <i className="fi fi-rr-check"></i>
         </small>
       </div>
       <div className="message-content owner">
         <p className="">What do you need to know?</p>
         <small>
-          12:55 am <i class="fi fi-rr-check"></i>
+          12:55 am <i className="fi fi-rr-check"></i>
         </small>
       </div>
       <div className="message-content">

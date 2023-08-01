@@ -1,3 +1,12 @@
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
 .conversations {
   padding: 20px;
 }
@@ -19,6 +28,19 @@
 }
 .chats {
   width: 350px;
+  height: 566px;
+  overflow-y: scroll;
+}
+.chats::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+.chats::-webkit-scrollbar-track {
+  background: var(--smoke);
+}
+/* Handle */
+.chats::-webkit-scrollbar-thumb {
+  background: var(--black-10);
 }
 .chats-head {
   display: flex;
@@ -102,6 +124,13 @@
   color: var(--primary);
   padding: 0px 10px;
 }
+.message-container {
+  height: calc(100% - 128px);
+  overflow-y: scroll;
+}
+.message-container::-webkit-scrollbar {
+  width: 3px;
+}
 .message-content {
   margin: 20px 0;
   display: flex;
@@ -118,24 +147,28 @@
 .message-content small {
   margin-top: 5px;
 }
+.message-content i {
+  background: var(--secondary);
+  border-radius: 50%;
+  padding: 2px 3px;
+}
 .message-content.owner {
   align-items: flex-end;
 }
 .message-content.owner p {
-  background: #ffead1;
-  color: #1c1d22;
+  background: var(--secondary);
+  color: var(--black-100);
   border-radius: 16px 16px 0 16px;
 }
 .message-content.owner span {
-  background: #ffead1;
+  background: var(--secondary);
   width: 15px;
   height: 15px;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
-  /* align-items: center;
-  justify-content: center; */
 }
+
 /* search bar  */
 .seachbar-input-div {
   display: flex;
@@ -161,6 +194,49 @@
   color: var(--black);
   font-size: 1.2rem;
 }
+
+/* message input  */
+.input-div {
+  border: 1px solid #e1e2e9;
+  padding: 7px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.input-div input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px 0;
+}
+.input-div i {
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+}
+.input-div i.fi-rr-plus {
+  background: var(--secondary);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.input-div i.fi-rr-grin-alt {
+  margin-right: 10px;
+  margin-left: auto;
+  color: var(--primary);
+}
+.input-div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  background: var(--secondary);
+  padding: 7px;
+  border-radius: 8px;
+}
+
+/* responsiveness  */
 @media (max-width: 965px) {
   .conversations .main {
     flex-direction: column;

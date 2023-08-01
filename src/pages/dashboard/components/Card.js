@@ -12,7 +12,7 @@ export default function Card() {
             {summ.icon}
             <p>
               <small>{summ.date}</small>
-              <img src="./assets/icon/chevron.svg" alt="drop down" />
+              <i className="fi fi-rr-angle-small-down"></i>
             </p>
           </div>
           <div className="card-body">

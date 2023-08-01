@@ -10,6 +10,7 @@ export const listItems = [
     name: "Orders",
     icon: <Iconly name="Bag" />,
     to: "/o",
+    count: 3,
   },
   {
     name: "Customers",
@@ -24,7 +25,8 @@ export const listItems = [
   {
     name: "Conversations",
     icon: <Iconly name="Chat" />,
-    to: "/chats",
+    to: "/conversations",
+    count: 18,
   },
   {
     name: "Settings",

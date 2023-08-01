@@ -30,6 +30,15 @@
   border: none;
   cursor: pointer;
 }
+.navbar .route {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black-60);
+}
+.navbar .route::first-letter {
+  text-transform: uppercase;
+}
+
 @media (max-width: 612px) {
   .navbar .main {
     justify-content: flex-start;

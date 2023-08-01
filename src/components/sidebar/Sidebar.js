@@ -24,6 +24,7 @@ export default function Sidebar({ screenWidth, mobileMenu, setMobileMenu }) {
                 <NavLink exact to={item.to}>
                   <span>{item.icon}</span>
                   <span>{item.name}</span>
+                  {item?.count && <small>{item?.count}</small>}
                 </NavLink>
               </li>
             ))}
