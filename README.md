@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is a React application built to fulfill the requirements of the Frontend Engineer role technical assessment at [Company Name]. The goal of this project is to create a webpage that adheres to the provided design while ensuring responsiveness on various devices and screen sizes. The page will be styled using CSS, SCSS, or CSS-in-JS to closely match the design, and interactive elements will be incorporated as needed.
+This project is a React application built to fulfill the requirements of the Frontend Engineer role technical assessment at [Morgan and Hunt]. The goal of this project is to create a webpage that adheres to the provided design while ensuring responsiveness on various devices and screen sizes. The page was styled using CSS to closely match the design, and interactive elements will be incorporated as needed.
 
 ## Technologies && Libraries Used
 
@@ -63,3 +63,16 @@ metrix/
 ├── .gitignore
 ├── README.md
 └── ...
+
+## Design structure
+
+The provided design is implemented using appropriate components to structure the page. The layout is responsive, ensuring an optimal viewing experience on different devices and screen sizes.
+
+## Styling
+CSS is used to style the components and match the design as closely as possible. The project follows a modular and organized approach to ensure easy maintenance and scalability.
+
+## Interactivity
+Interactivity is incorporated into the page where necessary. Hover effects and button clicks have been implemented to enhance the user experience.
+
+## Conclusion
+This README provides an overview of the project and its implementation.
