@@ -30,4 +30,9 @@ cd metrix
 ```bash
 npm install
 ```
+
 ## Usage
+Once the installation is complete, you can start the development server with the following command:
+```bash
+npm run start
+```
