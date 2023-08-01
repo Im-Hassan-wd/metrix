@@ -7,7 +7,7 @@ import "./Dashboard.css";
 import Card from "./components/Card";
 import DoughnutChart from "./components/DoughnutChart";
 import Order from "./components/Order";
-import Chart from "./components/Chart";
+import BarChart from "./components/BarChart";
 
 export default function Dashboard() {
   return (
@@ -16,7 +16,7 @@ export default function Dashboard() {
       <DoughnutChart />
       <Order />
       <div className="summary">
-        <Chart />
+        <BarChart />
       </div>
     </div>
   );
