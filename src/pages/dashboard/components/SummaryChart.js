@@ -13,46 +13,40 @@ import {
 
 const data = [
   {
-    name: "Page A",
+    name: "Sep 10",
     uv: 4000,
     pv: 2400,
     amt: 2400,
   },
   {
-    name: "Page B",
+    name: "Sep 13",
     uv: 3000,
     pv: 1398,
     amt: 2210,
   },
   {
-    name: "Page C",
+    name: "Sep 14",
     uv: 2000,
     pv: 9800,
     amt: 2290,
   },
   {
-    name: "Page D",
+    name: "Sep 15",
     uv: 2780,
     pv: 3908,
     amt: 2000,
   },
   {
-    name: "Page E",
+    name: "Sep 16",
     uv: 1890,
     pv: 4800,
     amt: 2181,
   },
   {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "Sep 17",
+    uv: 1890,
+    pv: 4800,
+    amt: 2181,
   },
 ];
 
@@ -63,7 +57,7 @@ export default class Example extends PureComponent {
     return (
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
-          width={500}
+          width={50}
           height={300}
           data={data}
           margin={{
@@ -79,7 +73,7 @@ export default class Example extends PureComponent {
           <Tooltip />
           <Legend />
           <Bar dataKey="pv" stackId="a" fill="#8884d8" />
-          <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
+          <Bar dataKey="uv" stackId="a" fill="#EEF0FA" />
         </BarChart>
       </ResponsiveContainer>
     );
