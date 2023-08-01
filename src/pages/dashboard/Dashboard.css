@@ -109,6 +109,7 @@
 .dashboard .summary {
   grid-row: 4 /8;
   grid-column: 1 / 9;
+  background: #fff;
 }
 .progressbar {
   height: 315px;
